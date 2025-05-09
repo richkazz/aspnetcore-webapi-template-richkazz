@@ -1,5 +1,3 @@
-
-
 # ASP.NET Core Web Api Template
  
 This project is an Web API Open-Source Boilerplate Template that includes Net 8, Web API standards, clean n-tier architecture, GraphQL service, Redis, Mssql, Mongo databases and User Auditing (Identity) with a lot of best practices.
@@ -26,12 +24,14 @@ You Solution Template is Ready!
 ### Alternatively you can also clone the [Repository](https://github.com/sinantok/aspnetcore-webapi-template).
 
 1. Clone this Repository and Extract it to a Folder.
-3. Change the Connection Strings for the "DefaultConnection" and "IdentityConnection" in the appsettings.json
-2. Run the following commands on Powershell in the Projecct's Directory.
+2. Change the Connection Strings for the "DefaultConnection" in the appsettings.json
+3. Run the following commands on Powershell in the Projecct's Directory.
 - dotnet restore
-- dotnet ef database update -Context IdentityContext
 - dotnet ef database update -Context ApplicationDbContext
 - dotnet run (OR) Run the Solution using Visual Studio
+
+### Note:
+The IdentityDB has been combined with the ApplicationDbContext, so the application now uses a single database.
 
 ### Swagger
 You can view endpoints with swagger
@@ -112,10 +112,3 @@ This template project has been developed to ensure that the necessary structures
 If you found this Implementation helpful or used it in your Projects, do give it a star. Thanks!
 
 ## Licensing
-
-sinantok/aspnetcore-webapi-template Project is licensed with the [MIT License](https://github.com/sinantok/aspnetcore-webapi-template/blob/master/LICENSE).
-
-## About the Author
-### Sinan Tok
-- Github [github.com/sinantok](https://github.com/sinantok)
-- Linkedin - [Sinan Tok](https://www.linkedin.com/in/sinantok/)
