@@ -254,5 +254,5 @@ paket-files/
 
 db-data/
 src/Presentations/WebApi/appsettings.Development.json
-src/Libraries/Core/ServiceExtensions.cs
+
 .DS_Store
